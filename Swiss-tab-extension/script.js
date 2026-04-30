@@ -47,8 +47,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function fetchGitHubImages() {
     try {
-      const res = await fetch("https://api.github.com/repos/omaxx101/SwitzerlandTab/contents/images");
+      const res = await fetch("https://api.github.com/repos/omaxx101/SwitzerlandTab/contents/Swizz");
       const data = await res.json();
+
 
       backgrounds = data
         .filter(file =>
