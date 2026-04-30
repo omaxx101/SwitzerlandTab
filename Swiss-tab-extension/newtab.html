@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- Fonts (more suitable for Swiss/European style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="backdrop"></div>
+
+  <!-- TOP LEFT: GREETING -->
+  <section class="panel greeting-card">
+    <div class="card-label"></div>
+    <p class="greeting-text" id="greetingText">
+      Grüezi
+    </p>
+  </section>
+
+  <!-- TOP RIGHT: TODO -->
+  <aside class="panel todo-card">
+    <input id="todoInput" placeholder="Hüt Fokus / TODO" />
+    <ul id="todoList"></ul>
+  </aside>
+
+  <!-- TIME & DATE -->
+  <section class="time-date-card panel"> 
+    <div class="card-label">Schwiiz / Switzerland (GMT +01:00)</div> 
+    <div class="time-date-row"> 
+      <h1 id="time" class="time"></h1> 
+      <div class="date-block">
+         <p id="date" class="date-display"></p> 
+      </div> 
+    </div> 
+  </section>
+
+  <!-- BOTTOM RIGHT: QUOTE + PHOTO -->
+  <section class="panel quote-card">
+    <div class="card-label">Zitat / QUOTE</div>
+
+    <p id="quote"></p>
+    <p id="translation"></p>
+
+    <a id="photoLink" target="_blank" class="photo-link">
+      📷 
+    </a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
